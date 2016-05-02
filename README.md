@@ -14,7 +14,7 @@ Now with Admin Page Spider you can crawl all over your pages from any point and 
 
 It adds several quick access link menus to your admin bar. To view any page, or directly edit a page.
 
-[Donations For New Features](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=jatacid%40gmail%2ecom&amp;lc=AU&amp;item_name=Dentex%20Media&amp;no_note=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
+[Donations For New Features](https://j7digital.com/admin-page-spider#donate)
 
 ![Admin Spider Menus Image](https://github.com/jatacid/admin-page-spider/blob/master/assets/APS_example_jumping_around.PNG?raw=true)
 
@@ -40,7 +40,7 @@ In your dashboard go to the Settings -> Admin Page Spider.  Set the desired menu
 **Install Beaver Builder For Additional Features**
 If you use Beaver Builder there's a similar menu available to instantly jump into the editing interface for Beaver Builder pages.
 
-If you don't know what beaver builder is - check it out [here](www.wpbeaverbuilder.com/?fla=215)
+If you don't know what beaver builder is - check it out [here](http://www.wpbeaverbuilder.com/?fla=215)
 
 
 ## Changelog
@@ -48,4 +48,4 @@ If you don't know what beaver builder is - check it out [here](www.wpbeaverbuild
 
 Visit the [changelog](https://j7digital.com/admin-page-spider) for more information about changes made to this plugin.
 
-[Donations For New Features](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=jatacid%40gmail%2ecom&amp;lc=AU&amp;item_name=Dentex%20Media&amp;no_note=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
+# [Donations For New Features](https://j7digital.com/admin-page-spider#donate)
