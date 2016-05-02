@@ -19,8 +19,8 @@ class Admin_Page_Spider {
 
 // Add the menu item and page
 	public function apspider_plugin_settings_page() {
-		$page_title = 'Admin Page Spider';
-		$menu_title = 'Admin Page Spider';
+		$page_title = __( 'Admin Page Spider' , 'admin-page-spider' );
+		$menu_title = __( 'Admin Page Spider' , 'admin-page-spider' );
 		$capability = 'manage_options';
 		$slug = 'apspider_fields';
 		$callback = array( $this, 'apspider_plugin_settings_page_content' );
@@ -45,13 +45,13 @@ class Admin_Page_Spider {
 // Create a list of 'sections' for the settings page.
 	public function apspider_setup_sections() {
 
-		add_settings_section( 'first_section', '"View Menu" Settings', array( $this, 'apspider_section_callback' ), 'apspider_fields' );
+		add_settings_section( 'first_section', __( '"View Menu" Settings' , 'admin-page-spider' ), array( $this, 'apspider_section_callback' ), 'apspider_fields' );
 
-		add_settings_section( 'second_section', '"Edit Menu" Settings', array( $this, 'apspider_section_callback' ), 'apspider_fields' );
+		add_settings_section( 'second_section', __( '"Edit Menu" Settings' , 'admin-page-spider' ), array( $this, 'apspider_section_callback' ), 'apspider_fields' );
 
 	// Only create this section if Beaver Builder is active
 		if ( class_exists( 'FLBuilder' ) ) {
-			add_settings_section( 'third_section', 'Beaver Builder Settings', array( $this, 'apspider_section_callback' ), 'apspider_fields' );
+			add_settings_section( 'third_section', __( 'Beaver Builder Settings' , 'admin-page-spider' ), array( $this, 'apspider_section_callback' ), 'apspider_fields' );
 		}
 	}
 
@@ -59,14 +59,14 @@ class Admin_Page_Spider {
 	public function apspider_section_callback( $arguments ) {
 		switch( $arguments['id'] ){
 			case 'first_section':
-			echo 'Options for the "View Menu" allowing you to view any page';
+			echo __( 'Options for the "View Menu" allowing you to view any page' , 'admin-page-spider' );
 			break;
 
 		case 'second_section':
-			echo 'Options for the "Edit in WP" allowing you quick access to the Wordpress Edit Page';
+			echo __( 'Options for the "Edit in WP" allowing you quick access to the Wordpress Edit Page' , 'admin-page-spider' );
 			break;
 		case 'third_section':
-			echo 'Options for Beaver Builder and shortcut menus';
+			echo __( 'Options for Beaver Builder and shortcut menus' , 'admin-page-spider' );
 			break;
 		}
 	}

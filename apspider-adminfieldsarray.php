@@ -92,24 +92,24 @@ $fields = array(
 
 			array(
 				'uid' => 'apspider_radio_viewmenu',
-				'label' => 'Display The "VIEW" Menu?',
+				'label' => __( 'Display The "VIEW" Menu?' , 'admin-page-spider' ),
 				'section' => 'first_section',
 				'type' => 'radio',
 				'options' => array(
-					'option1' => 'Display',
-					'option2' => 'Hide',
+					'option1' => __( 'Display' , 'admin-page-spider' ),
+					'option2' => __( 'Hide' , 'admin-page-spider' ),
 					),
 				'default' => array('option1')
 				),
 
 			array(
 				'uid' => 'apspider_radio_editmenu',
-				'label' => 'Display The "EDIT" Menu?',
+				'label' => __( 'Display The "EDIT" Menu?' , 'admin-page-spider' ),
 				'section' => 'second_section',
 				'type' => 'radio',
 				'options' => array(
-					'option1' => 'Display',
-					'option2' => 'Hide',
+					'option1' => __( 'Display' , 'admin-page-spider' ),
+					'option2' => __( 'Hide' , 'admin-page-spider' ),
 					),
 				'default' => array('option1')
 				),
@@ -117,13 +117,13 @@ $fields = array(
 
 			array(
 				'uid' => 'apspider_radio_bbmenu',
-				'label' => 'Display The "EDIT in Beaver Builder" Menu?',
+				'label' => __( 'Display The "EDIT in Beaver Builder" Menu?' , 'admin-page-spider' ),
 				'section' => 'third_section',
 				'type' => 'radio',
 				'supplemental' => 'bb',
 				'options' => array(
-					'option1' => 'Display',
-					'option2' => 'Hide',
+					'option1' => __( 'Display' , 'admin-page-spider' ),
+					'option2' => __( 'Hide' , 'admin-page-spider' ),
 					),
 				'default' => array('option1')
 				)
