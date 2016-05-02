@@ -4,11 +4,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 //Adds a "Edit Page In BB" menu to adminbar
 if (get_option('apspider_radio_bbmenu')[0] == 'option1') {  // Checks if option is set to Display
-	add_action( 'admin_bar_menu', 'edit_bb_pg', 999 );
+	add_action( 'admin_bar_menu', 'apspider_edit_bb_pg', 999 );
 }
 
 //Adds a "Edit Page In BB" menu to adminbar
-function edit_bb_pg( $wp_admin_bar ) {
+function apspider_edit_bb_pg( $wp_admin_bar ) {
 
 // Exit if beaver builder isn't active - no need to create the menu
 if ( !class_exists( 'FLBuilder' ) ) {
@@ -27,10 +27,10 @@ return;
 
 // Create the admin menu & submenus
 	$args = array(
-		'id'    => 'edit_bb_pg',
+		'id'    => 'apspider_edit_bb_pg',
 		'title' => __( 'Edit Page in BB' , 'admin-page-spider' ),
 		'href'  =>  $ur,
-		'meta'  => array( 'class' => 'edit_bb_pg_group' )
+		'meta'  => array( 'class' => 'apspider_edit_bb_pg_group' )
 		);
 	$wp_admin_bar->add_node( $args );
 
@@ -42,8 +42,8 @@ return;
 			'id'    => $page->ID . 'bbpg',
 			'title' => $title,
 			'href'  => $link . '?fl_builder',
-			'parent' => 'edit_bb_pg',
-			'meta'  => array( 'class' => 'edit_bb_pg_group' )
+			'parent' => 'apspider_edit_bb_pg',
+			'meta'  => array( 'class' => 'apspider_edit_bb_pg_group' )
 			);
 		$wp_admin_bar->add_node( $args );
 
@@ -56,7 +56,7 @@ return;
 				'title' => $title,
 				'href'  => $link . '?fl_builder',
 				'parent' => $page->ID . 'bbpg',
-				'meta'  => array( 'class' => 'edit_bb_pg_group' )
+				'meta'  => array( 'class' => 'apspider_edit_bb_pg_group' )
 				);
 			$wp_admin_bar->add_node( $args );
 		}
@@ -124,16 +124,16 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 
 //Adds a "View Page" menu to adminbar
 if (get_option('apspider_radio_viewmenu')[0] == 'option1') { //option1=display
-	add_action( 'admin_bar_menu', 'view_bb_pg', 997);
+	add_action( 'admin_bar_menu', 'apspider_view_wp_pg', 997);
 }
 //Adds a "View Page" menu to adminbar
-function view_bb_pg( $wp_admin_bar ) {
+function apspider_view_wp_pg( $wp_admin_bar ) {
 	if (current_user_can( 'administrator')){
 		$args = array(
-			'id'    => 'view_bb_pg',
+			'id'    => 'apspider_view_wp_pg',
 			'title' => __( 'View Page' , 'admin-page-spider' ),
 			'href'  =>  '',
-			'meta'  => array( 'class' => 'view_bb_pg_group' )
+			'meta'  => array( 'class' => 'apspider_view_wp_pg_group' )
 			);
 		$wp_admin_bar->add_node( $args );
 
@@ -145,8 +145,8 @@ function view_bb_pg( $wp_admin_bar ) {
 				'id'    => $page->ID . 'vpg',
 				'title' => $title,
 				'href'  => $link,
-				'parent' => 'view_bb_pg',
-				'meta'  => array( 'class' => 'view_bb_pg_group' )
+				'parent' => 'apspider_view_wp_pg',
+				'meta'  => array( 'class' => 'apspider_view_wp_pg_group' )
 				);
 			$wp_admin_bar->add_node( $args );
 
@@ -159,7 +159,7 @@ function view_bb_pg( $wp_admin_bar ) {
 					'title' => $title,
 					'href'  => $link,
 					'parent' => $page->ID . 'vpg',
-					'meta'  => array( 'class' => 'view_bb_pg_group' )
+					'meta'  => array( 'class' => 'apspider_view_wp_pg_group' )
 					);
 				$wp_admin_bar->add_node( $args );
 			}

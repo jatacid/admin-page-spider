@@ -4,7 +4,7 @@ Contributors: Jatacid
 Donate link: https://j7digital.com/admin-page-spider#donate
 Tags: usability, admin, developer
 Requires at least: 4.4.0
-Tested up to: 4.5
+Tested up to: 4.5.1
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -56,11 +56,11 @@ This is a super simple plugin and designed to increase productivity, thus there 
 
 == Screenshots ==
 
-<img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/APS_example_jumping_around.PNG?raw=true">
+1. <img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/APS_example_jumping_around.PNG?raw=true">
 
-<img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/APS_menus_example.PNG?raw=true">
+2. <img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/APS_menus_example.PNG?raw=true">
 
-<img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/admin_screen.PNG?raw=true">
+3. <img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/admin_screen.PNG?raw=true">
 
 
 == Changelog ==
@@ -69,7 +69,7 @@ Visit the [changelog](https://j7digital.com/admin-page-spider) for more informat
 
 == Upgrade Notice ==
 
-= 1.03 =
-Added localisation!
+= 1.04 =
+Added localisation and fixed code specificity!
 
 [Donations For New Features](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=jatacid%40gmail%2ecom&amp;lc=AU&amp;item_name=Dentex%20Media&amp;no_note=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
