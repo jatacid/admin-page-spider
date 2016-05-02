@@ -61,8 +61,7 @@ This is a super simple plugin and designed to increase productivity, thus there 
 
 
 == Changelog ==
-
-Visit the [changelog accordion](https://j7digital.com/admin-page-spider) for more information about changes made to this plugin.
+Visit the [changelog](https://j7digital.com/admin-page-spider) for more information about changes made to this plugin.
 
 == Upgrade Notice ==
 
