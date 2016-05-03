@@ -41,7 +41,7 @@ return;
 		$args = array(
 			'id'    => $page->ID . 'bbpg',
 			'title' => $title,
-			'href'  => $link . '?fl_builder',
+			'href'  => $link . '&fl_builder',
 			'parent' => 'edit_bb_pg',
 			'meta'  => array( 'class' => 'edit_bb_pg_group' )
 			);
