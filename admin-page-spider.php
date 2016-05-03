@@ -8,7 +8,7 @@ Author: J7Digital
 Version: 1.02
 Author URI: https://j7digital.com/admin-page-spider
 Text Domain: admin-page-spider
-Domain Path: /
+Domain Path: /languages
 License: GPLv2 or later
 
 This program is free software; you can redistribute it and/or
@@ -33,6 +33,12 @@ include_once 'apspider-adminsettings.php';
 
 // Loads functions & menus
 include_once 'apspider-functions.php';
+
+add_action ( 'plugins_loaded' , 'page_spider_textdomain' );
+
+function page_spider_textdomain () {
+	load_plugin_textdomain( 'admin-page-spider', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+}
 
 // Defines activation & deactivation functions
 register_deactivation_hook( __FILE__, 'apspider_plugin_deactivate' );

@@ -28,7 +28,7 @@ return;
 // Create the admin menu & submenus
 	$args = array(
 		'id'    => 'edit_bb_pg',
-		'title' => 'Edit Page in BB',
+		'title' => __( 'Edit Page in BB' , 'admin-page-spider' ),
 		'href'  =>  $ur,
 		'meta'  => array( 'class' => 'edit_bb_pg_group' )
 		);
@@ -74,7 +74,7 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 	$id = get_the_ID();
 	$args = array(
 		'id'    => 'apspider_edit_wp_pg',
-		'title' => 'Edit Page in WP',
+		'title' => __( 'Edit Page in WP' , 'admin-page-spider' ),
 		'href'  => admin_url( '/post.php?post=' . $id . '&action=edit'),
 		'meta'  => array( 'class' => 'apspider_edit_wp_pg_group' )
 		);
@@ -82,7 +82,7 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 
 	$args = array(
 		'id'    => 'viewapspider_edit_wp_pg',
-		'title' => 'View ALL Pages in Backend',
+		'title' => __( 'View ALL Pages in Backend' , 'admin-page-spider' ),
 		'href'  => admin_url( '/edit.php?post_type=page'),
 		'parent' => 'apspider_edit_wp_pg',
 		'meta'  => array( 'class' => 'apspider_edit_wp_pg_group' )
@@ -131,7 +131,7 @@ function view_bb_pg( $wp_admin_bar ) {
 	if (current_user_can( 'administrator')){
 		$args = array(
 			'id'    => 'view_bb_pg',
-			'title' => 'View Page',
+			'title' => __( 'View Page' , 'admin-page-spider' ),
 			'href'  =>  '',
 			'meta'  => array( 'class' => 'view_bb_pg_group' )
 			);

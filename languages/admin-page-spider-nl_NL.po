@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Admin Page Spider\n"
+"POT-Creation-Date: 2016-05-02 15:10+0200\n"
+"PO-Revision-Date: 2016-05-02 15:28+0200\n"
+"Language-Team: Didou Schol <didou@badabing.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-WPHeader: admin-page-spider.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Didou Schol <didou@badabing.nl>\n"
+"Language: nl_NL\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: apspider-adminfieldsarray.php:95
+msgid "Display The \"VIEW\" Menu?"
+msgstr "Het \"Bekijk Pagina\" menu weergeven?"
+
+#: apspider-adminfieldsarray.php:99 apspider-adminfieldsarray.php:111
+#: apspider-adminfieldsarray.php:125
+msgid "Display"
+msgstr "Weergeven"
+
+#: apspider-adminfieldsarray.php:100 apspider-adminfieldsarray.php:112
+#: apspider-adminfieldsarray.php:126
+msgid "Hide"
+msgstr "Verbergen"
+
+#: apspider-adminfieldsarray.php:107
+msgid "Display The \"EDIT\" Menu?"
+msgstr "Het \"Bewerk Pagina in WP\" menu weergeven?"
+
+#: apspider-adminfieldsarray.php:120
+msgid "Display The \"EDIT in Beaver Builder\" Menu?"
+msgstr "Het \"Bewerk Pagina met Beaver Builder\" menu weergeven?"
+
+#. Plugin Name of the plugin/theme
+#: apspider-adminsettings.php:23 apspider-adminsettings.php:24
+msgid "Admin Page Spider"
+msgstr ""
+
+#: apspider-adminsettings.php:49
+msgid "\"View Menu\" Settings"
+msgstr "\"Bekijk Pagina\" menu Instellingen"
+
+#: apspider-adminsettings.php:51
+msgid "\"Edit Menu\" Settings"
+msgstr "\"Bewerk Pagina in WP\" menu Instellingen"
+
+#: apspider-adminsettings.php:55
+msgid "Beaver Builder Settings"
+msgstr "\"Bewerk Pagina in BB\" menu Instellingen"
+
+#: apspider-adminsettings.php:63
+msgid "Options for the \"View Menu\" allowing you to view any page"
+msgstr ""
+"Opties voor het \"Open Pagina\" menu zodat je snel elke pagina kunt bekijken"
+
+#: apspider-adminsettings.php:67
+msgid ""
+"Options for the \"Edit in WP\" allowing you quick access to the Wordpress "
+"Edit Page"
+msgstr ""
+"Opties voor het \"Bewerk Pagina\" menu zodat je snel toegang hebt tot de "
+"Wordpress Bewerk Pagina"
+
+#: apspider-adminsettings.php:70
+msgid "Options for Beaver Builder and shortcut menus"
+msgstr "Opties voor Beaver Builder en shortcut menu"
+
+#: apspider-functions.php:31
+msgid "Edit Page in BB"
+msgstr "Bewerk Pagina in BB"
+
+#: apspider-functions.php:77
+msgid "Edit Page in WP"
+msgstr "Bewerk Pagina in WP"
+
+#: apspider-functions.php:85
+msgid "View ALL Pages in Backend"
+msgstr "Bekijk ALLE pagina's in het admin-gedeelte"
+
+#: apspider-functions.php:134
+msgid "View Page"
+msgstr "Bekijk Pagina"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://j7digital.com/admin-page-spider"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds menus to the admin bar which gives you quick access to view or edit any "
+"page available on the website."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "J7Digital"
+msgstr ""
