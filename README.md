@@ -1,4 +1,4 @@
-![Image of Admin Spider in Action](https://ps.w.org/admin-page-spider/assets/banner-772x250.png)
+#[#Download From Wordpress Directory](https://wordpress.org/plugins/admin-page-spider/)
 
 # Admin Page Spider
 
