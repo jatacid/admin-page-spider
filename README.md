@@ -1,4 +1,4 @@
-![Image of Admin Spider in Action](https://github.com/jatacid/admin-page-spider/blob/master/assets/APS_menus_example.PNG)
+![Image of Admin Spider in Action](https://ps.w.org/admin-page-spider/assets/banner-772x250.png)
 
 # Admin Page Spider
 
