@@ -1,6 +1,5 @@
 === Admin Page Spider ===
-
-Contributors: Jatacid
+Contributors: Jatacid, jatacid
 Donate link: https://j7digital.com/admin-page-spider#donate
 Tags: usability, admin, developer
 Requires at least: 4.4.0
@@ -9,7 +8,7 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add quick access menus to your admin bar to view and edit any page on your site, from anywhere! Crawl your entire site quickly and easily with Admin Page Spider
+View & Edit any page on your entire website from any location!
 
 == Description ==
 
@@ -20,25 +19,24 @@ Now with Admin Page Spider you can crawl all over your pages from any point and 
 
 It adds several quick access link menus to your admin bar. To view any page, or directly edit a page.
 
-[Donations For New Features](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=jatacid%40gmail%2ecom&amp;lc=AU&amp;item_name=Dentex%20Media&amp;no_note=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
+See the [screenshots tab](http://wordpress.org/extend/plugins/admin-page-spider/screenshots/) for more details.
 
 
 == Installation ==
-
 
 You can either install it automatically from the WordPress admin, or do it manually:
 
 Unzip the archive and put the admin-page-spider folder into your plugins folder (/wp-content/plugins/).
 Activate the plugin from the Plugins menu.
 
-=Usage=
+= Usage =
 
 In your dashboard go to the Settings -> Admin Page Spider.  Set the desired menus to 'Display' and hit save. Now they will display in your admin bar and allow you to jump around between your pages easily.
 
 **Install Beaver Builder For Additional Features**
 If you use Beaver Builder there's a similar menu available to instantly jump into the editing interface for Beaver Builder pages.
 
-If you don't know what beaver builder is - check it out [here](www.wpbeaverbuilder.com/?fla=215)
+If you don't know what beaver builder is - check it out [here](https://www.wpbeaverbuilder.com/?fla=215)
 
 
 
@@ -56,20 +54,23 @@ This is a super simple plugin and designed to increase productivity, thus there 
 
 == Screenshots ==
 
-1. <img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/APS_example_jumping_around.PNG?raw=true">
+1. screenshot-1.png It adds navigation menus to your admin bar which display all the pages in your website & let you quickly jump to any page or quickly edit any page.
 
-2. <img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/APS_menus_example.PNG?raw=true">
+2. screenshot-2.png
+Sits on top of your admin bar giving you an overview of all pages. Even if you have a membership site you can view hidden pages!
 
-3. <img src="https://github.com/jatacid/admin-page-spider/blob/master/assets/admin_screen.PNG?raw=true">
-
+3. screenshot-3.png
+Options to turn off and turn on.  Simple and turns itself on when activated and deletes its own records from your database when you deactivate.
 
 == Changelog ==
 
-Visit the [changelog](https://j7digital.com/admin-page-spider) for more information about changes made to this plugin.
+= 1.04 =
+* Added basic localisation, updated readme a bunch of times and made code less conflict-risky with bbPress
+
+= 1.00 =
+* Initial Launch
 
 == Upgrade Notice ==
 
 = 1.04 =
 Added localisation and fixed code specificity!
-
-[Donations For New Features](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=jatacid%40gmail%2ecom&amp;lc=AU&amp;item_name=Dentex%20Media&amp;no_note=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
