@@ -1,5 +1,5 @@
 === Admin Page Spider ===
-Contributors: Jatacid, jatacid
+Contributors: jatacid
 Donate link: https://j7digital.com/admin-page-spider#donate
 Tags: usability, admin, developer
 Requires at least: 4.4.0
@@ -21,6 +21,13 @@ It adds several quick access link menus to your admin bar. To view any page, or 
 
 See the [screenshots tab](http://wordpress.org/extend/plugins/admin-page-spider/screenshots/) for more details.
 
+
+**Install Beaver Builder For Additional Features**
+If you use Beaver Builder there's a similar menu available to instantly jump into the editing interface for Beaver Builder pages.
+
+If you don't know what beaver builder is - check it out [here](https://www.wpbeaverbuilder.com/?fla=215)
+
+**Please consider making a donation if this product is useful for you**
 
 == Installation ==
 
@@ -65,7 +72,7 @@ Options to turn off and turn on.  Simple and turns itself on when activated and 
 == Changelog ==
 
 = 1.04 =
-* Added basic localisation, updated readme a bunch of times and made code less conflict-risky with bbPress
+* Added basic localisation (thanks badabingbreda) , updated readme a bunch of times and made code less conflict-risky with bbPress
 
 = 1.00 =
 * Initial Launch

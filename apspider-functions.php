@@ -30,7 +30,7 @@ return;
 		'id'    => 'apspider_edit_bb_pg',
 		'title' => __( 'Edit Page in BB' , 'admin-page-spider' ),
 		'href'  =>  $ur,
-		'meta'  => array( 'class' => 'apspider_edit_bb_pg_group' )
+		'meta'  => array( 'class' => 'apspider_edit_bb_pg_group apspider_menu_class' )
 		);
 	$wp_admin_bar->add_node( $args );
 
@@ -76,7 +76,7 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 		'id'    => 'apspider_edit_wp_pg',
 		'title' => __( 'Edit Page in WP' , 'admin-page-spider' ),
 		'href'  => admin_url( '/post.php?post=' . $id . '&action=edit'),
-		'meta'  => array( 'class' => 'apspider_edit_wp_pg_group' )
+		'meta'  => array( 'class' => 'apspider_edit_wp_pg_group apspider_menu_class' )
 		);
 	$wp_admin_bar->add_node( $args );
 
@@ -133,7 +133,7 @@ function apspider_view_wp_pg( $wp_admin_bar ) {
 			'id'    => 'apspider_view_wp_pg',
 			'title' => __( 'View Page' , 'admin-page-spider' ),
 			'href'  =>  '',
-			'meta'  => array( 'class' => 'apspider_view_wp_pg_group' )
+			'meta'  => array( 'class' => 'apspider_view_wp_pg_group apspider_menu_class' )
 			);
 		$wp_admin_bar->add_node( $args );
 
@@ -148,6 +148,8 @@ function apspider_view_wp_pg( $wp_admin_bar ) {
 				'parent' => 'apspider_view_wp_pg',
 				'meta'  => array( 'class' => 'apspider_view_wp_pg_group' )
 				);
+
+
 			$wp_admin_bar->add_node( $args );
 
 			$subpages = get_pages( array( 'child_of' => $page->ID, 'sort_column' => 'menu_order'));
@@ -166,3 +168,38 @@ function apspider_view_wp_pg( $wp_admin_bar ) {
 		}
 	}
 } // End of "View Page" Menu Bar creation
+
+
+
+// Remove all the now 'redundant' nodes from the admin bar that are no longer needed
+// This section removes the beaver builder and edit items from Admin Bar
+function apspider_admin_bar_removal() {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_node('edit');
+	$wp_admin_bar->remove_node('fl-builder-frontend-edit-link');
+}
+add_action( 'wp_before_admin_bar_render', 'apspider_admin_bar_removal', 99);
+
+
+//Adds custom styling css for the admin bar both in frontend and backend so that on really long lists it will display a scrollbar and properly show child menu items as a hover over the top of the child menus.
+function add_aps_custom_admin_styles() {
+	echo '<style type="text/css">
+.apspider_menu_class .ab-sub-wrapper {
+    max-height: 90vh !important ;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+.apspider_menu_class .ab-sub-wrapper li {
+    width: 90% !important;
+}
+.apspider_menu_class .menupop ul {
+    position: fixed !important;
+    z-index: 999999 !important;
+    top: auto !important;
+    left: auto !important;
+    overflow: none !important;
+    background-color: #32373C !important;
+}</style>';
+}
+add_action('admin_head', 'add_aps_custom_admin_styles', 10);
+add_action('wp_head', 'add_aps_custom_admin_styles', 10);
