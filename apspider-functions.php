@@ -10,17 +10,19 @@ if (get_option('apspider_radio_bbmenu')[0] == 'option1') {  // Checks if option 
 //Adds a "Edit Page In BB" menu to adminbar
 function apspider_edit_bb_pg( $wp_admin_bar ) {
 
-// Exit if beaver builder isn't active - no need to create the menu
-if ( !class_exists( 'FLBuilder' ) ) {
-return;
-}
+	global $wp_rewrite;
+
+	// Exit if beaver builder isn't active - no need to create the menu
+	if ( !class_exists( 'FLBuilder' ) ) {
+		return;
+	}
 
 // Check the url so that it's not wp-admin and append beaver builder url
 	$ur = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-//$ur = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$pos = strpos($ur, 'wp-admin');
+	$the_parameter = ( ! $wp_rewrite->get_page_permastruct() ) ? '&' : '?' ;
 	if ($pos === false){
-		$ur = $ur . '?fl_builder';
+		$ur = $ur . $the_parameter. 'fl_builder';
 	}else{
 		$ur = '';
 	}
@@ -35,13 +37,15 @@ return;
 	$wp_admin_bar->add_node( $args );
 
 	$pages = get_pages(array( 'parent' => '0', 'sort_column' => 'menu_order'));
+	$the_parameter = ( ! $wp_rewrite->get_page_permastruct() ) ? '&' : '?' ;
+
 	foreach ( $pages as $page ) {
 		$link = get_page_link( $page->ID );
 		$title = $page->post_title;
 		$args = array(
 			'id'    => $page->ID . 'bbpg',
 			'title' => $title,
-			'href'  => $link . '?fl_builder',
+			'href'  => $link . $the_parameter . 'fl_builder',
 			'parent' => 'apspider_edit_bb_pg',
 			'meta'  => array( 'class' => 'apspider_edit_bb_pg_group' )
 			);
@@ -54,7 +58,7 @@ return;
 			$args = array(
 				'id'    => $subpage->ID. 'bbpg',
 				'title' => $title,
-				'href'  => $link . '?fl_builder',
+				'href'  => $link . $the_parameter .'fl_builder',
 				'parent' => $page->ID . 'bbpg',
 				'meta'  => array( 'class' => 'apspider_edit_bb_pg_group' )
 				);
