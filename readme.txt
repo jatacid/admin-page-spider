@@ -70,6 +70,10 @@ Sits on top of your admin bar giving you an overview of all pages. Even if you h
 Options to turn off and turn on.  Simple and turns itself on when activated and deletes its own records from your database when you deactivate.
 
 == Changelog ==
+
+= 1.06 =
+* Fixed syntax error with get_option array variable
+
 = 1.05 =
 * Added CSS to handle really long lists of pages
 * Added filter to remove now redundant edit links from menu
@@ -83,5 +87,5 @@ Options to turn off and turn on.  Simple and turns itself on when activated and 
 
 == Upgrade Notice ==
 
-= 1.05 =
-Now handles long lists of pages!
+= 1.06 =
+New This Version: Fixed a fatal syntax error some people were experiencing!

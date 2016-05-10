@@ -2,11 +2,11 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /*
 Plugin Name: Admin Page Spider
-Plugin URI: https://j7digital.com/admin-page-spider
+Plugin URI: https://wordpress.org/plugins/admin-page-spider/
 Description: Adds menus to the admin bar which gives you quick access to view or edit any page available on the website.
 Author: J7Digital
-Version: 1.05
-Author URI: https://j7digital.com/admin-page-spider
+Version: 1.06
+Author URI: https://wordpress.org/plugins/admin-page-spider/
 Text Domain: admin-page-spider
 Domain Path: /languages
 License: GPLv2 or later

@@ -3,7 +3,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
 //Adds a "Edit Page In BB" menu to adminbar
-if (get_option('apspider_radio_bbmenu')[0] == 'option1') {  // Checks if option is set to Display
+$aps_which_option_is_selected = get_option('apspider_radio_bbmenu');
+if ( $aps_which_option_is_selected[0] == 'option1' ) {  // Checks if option is set to Display
 	add_action( 'admin_bar_menu', 'apspider_edit_bb_pg', 999 );
 }
 
@@ -70,7 +71,8 @@ function apspider_edit_bb_pg( $wp_admin_bar ) {
 
 
 //Adds a "Edit Page In WP" menu to adminbar
-if (get_option('apspider_radio_editmenu')[0] == 'option1') { //option1=display
+$aps_which_option_is_selected = get_option('apspider_radio_editmenu');
+if ($aps_which_option_is_selected[0] == 'option1') { //option1=display
 	add_action( 'admin_bar_menu', 'apspider_edit_wp_pg', 998 );
 }
 //Adds a "Edit Page In WP" menu to adminbar
@@ -127,7 +129,8 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 
 
 //Adds a "View Page" menu to adminbar
-if (get_option('apspider_radio_viewmenu')[0] == 'option1') { //option1=display
+$aps_which_option_is_selected = get_option('apspider_radio_viewmenu');
+if ($aps_which_option_is_selected[0] == 'option1') { //option1=display
 	add_action( 'admin_bar_menu', 'apspider_view_wp_pg', 997);
 }
 //Adds a "View Page" menu to adminbar
