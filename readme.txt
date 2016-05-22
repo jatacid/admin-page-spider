@@ -1,9 +1,9 @@
 === Admin Page Spider ===
 Contributors: jatacid
-Donate link: https://j7digital.com/admin-page-spider#donate
+Donate link: https://adminpagespider.com/admin-page-spider-pro-pack/
 Tags: usability, admin, developer
 Requires at least: 4.4.0
-Tested up to: 4.5.1
+Tested up to: 4.5.2
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,12 +22,16 @@ It adds several quick access link menus to your admin bar. To view any page, or 
 See the [screenshots tab](http://wordpress.org/extend/plugins/admin-page-spider/screenshots/) for more details.
 
 
-**Install Beaver Builder For Additional Features**
+**Do You Use Any Editing Plugins?**
+There's a new Pro Pack addon available for Admin Page Spider which extends support to a variety of other page editing interfaces in wordpress.
+* Posts & Pages
+* Beaver Builder
+* CSS Hero
+* Microthemer
 If you use Beaver Builder there's a similar menu available to instantly jump into the editing interface for Beaver Builder pages.
 
-If you don't know what beaver builder is - check it out [here](https://www.wpbeaverbuilder.com/?fla=215)
+If you don't know what beaver builder is - check it out [Check it out](https://adminpagespider.com/admin-page-spider-pro-pack/)
 
-**Please consider making a donation if this product is useful for you**
 
 == Installation ==
 
@@ -49,15 +53,15 @@ If you don't know what beaver builder is - check it out [here](https://www.wpbea
 
 == Frequently Asked Questions ==
 
-= Can I change the labels? =
+= Is it free? =
 
-Not yet. It is a feature on the roadmap which will be reached with donations
+Yes, the base plugin which gives you a wordpress page navigation and edit menu is completely free and hosted on the wordpress plugin directory.
 
-= Are there any hooks available? =
+= What's avilable in the Pro Pack? =
 
-This is a super simple plugin and designed to increase productivity, thus there are no plugins added at this stage.
+Support for more developer friendly and intuitive working experiences. The CSS Editor interface plugins and various page builders as well as Wordpress Posts are supported.
 
-
+[Read More Here](https://adminpagespider.com/admin-page-spider-pro-pack/)
 
 == Screenshots ==
 
@@ -70,6 +74,13 @@ Sits on top of your admin bar giving you an overview of all pages. Even if you h
 Options to turn off and turn on.  Simple and turns itself on when activated and deletes its own records from your database when you deactivate.
 
 == Changelog ==
+
+= 1.07 =
+* Added hooks for adding support & new features.
+* Moved various features around for code sustainability
+* Cleaned up Admin Pages & added checks for administrator rights so non users don't see a weird thing in their menubar.
+* Added link to settings in the plugin page
+* Added activation/Deactivation & uninstall cleanup
 
 = 1.06 =
 * Fixed syntax error with get_option array variable
@@ -87,5 +98,5 @@ Options to turn off and turn on.  Simple and turns itself on when activated and 
 
 == Upgrade Notice ==
 
-= 1.06 =
-New This Version: Fixed a fatal syntax error some people were experiencing!
+= 1.07 =
+New This Version: Admins only! No more non-functioning links available to non admin users and much more!
