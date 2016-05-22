@@ -68,7 +68,7 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 			$args = array(
 			'id'    => $page->ID. 'wppg1',
 			'title' => __('Edit','admin-page-spider'),
-			'href'  => admin_url( '/post.php?post=' . $link . '&action=edit'),
+			'href'  => admin_url( '/post.php?post=' . $page->ID . '&action=edit'),
 			'parent' => $page->ID . 'wppg',
 			'meta'  => array( 'class' => 'apspider_edit_wp_pg_group aps_highlighted' )
 			);
@@ -94,7 +94,7 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 			$args = array(
 			'id'    => $subpage->ID. 'wppg1',
 			'title' => __('Edit','admin-page-spider'),
-			'href'  => admin_url( '/post.php?post=' . $link . '&action=edit'),
+			'href'  => admin_url( '/post.php?post=' . $page->ID . '&action=edit'),
 			'parent' => $subpage->ID . 'wppg',
 			'meta'  => array( 'class' => 'apspider_edit_wp_pg_group aps_highlighted' )
 			);
