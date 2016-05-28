@@ -92,7 +92,7 @@ _e('Support Us With Our Affiliate Links To Some Great Plugins!', 'admin-page-spi
 // Create a list of 'sections' for the settings page.
 	public function apspider_setup_sections() {
 
-		add_settings_section( 'first_section', __( '+ Wordpress Page Menus' , 'admin-page-spider' ), array( $this, 'apspider_section_callback' ), 'apspider_fields' );
+		add_settings_section( 'first_section', __( '+ Wordpress Pages Menu' , 'admin-page-spider' ), array( $this, 'apspider_section_callback' ), 'apspider_fields' );
 
 	do_action( 'add_more_settings_sections');
 	}
@@ -118,9 +118,14 @@ _e('Support Us With Our Affiliate Links To Some Great Plugins!', 'admin-page-spi
 		foreach( $fields as $field ){
 			add_settings_field( $field['uid'], $field['label'], array( $this, 'apspider_field_callback' ), 'apspider_fields', $field['section'], $field );
 			register_setting( 'apspider_fields', $field['uid'] );
+
+$uid = $field['uid'];
+$value = get_option($uid);
+			if ( !$value){
+				update_option($field['uid'], $field['default']);
+			}
 		}
 	}
-
 
 // Callback to handle each scenario of each settings field created and passed to it.
 	public function apspider_field_callback( $arguments ) {
@@ -209,16 +214,20 @@ function apspp_after_settings_messages($message){
 
 return '
 <div style="padding: 30px; background-color: lightblue; margin: 50px 0; text-align: center;">
-<h1>Since you have been an early adopter of Admin Page Spider - the code below can be used to get you 60 PERCENT OFF!!! your purchase of the Pro Pack!</h1>
-<h1 style="color: orange;">Code: FRIENDOFBEAVER</h1>
-<span style="color: red;"> Hurry! This code is only valid for the first 200 purchases!</span>
-<br><Br>
+<h1>Get <span style="color: purple;">60 PERCENT OFF!!!</span> Admin Page Spider Pro <br>
+Just use the code below!</h1>
+<br>
+<h1 style="color: purple;">60 Percent OFF Code: FRIENDOFBEAVER</h1>
+<span style="color: green;"> Hurry! Less than 100 uses left!</span>
+<h3>Since you have been an early adopter of Admin Page Spider,<br> you can use the code during your purchase of the new Pro Pack!</h3>
+<br>
 
-<br><h1>GET THE PRO PACK!</h1><ul>
-<li>+ Support for Beaver Builder AND Templates!</li>
-<li>+ Support For Wordpress Posts</li>
-<li>+ Support For CSS Hero!</li>
-<li>+ Support For Microthemer!</li>
+
+<br><h1>THE PRO PACK FEATURES!</h1><ul>
+<li>+ Wordpress Posts!</li>
+<li>+ Beaver Builder! AND Templates!</li>
+<li>+ CSS Hero!</li>
+<li>+ Microthemer!</li>
 <li>+ Cheap & Dev Friendly Site Licenses!</li>
 </ul><br/>
 <a target="_blank" href="https://adminpagespider.com/admin-page-spider-pro-pack/" style="text-decoration: none;"><h3 style="background-color: darkslateblue; color: white; max-width: 300px; text-decoration: none; margin: auto; padding: 10px 20px; border-radius: 15px;">Check It Out Now</h3></a></div>' ;

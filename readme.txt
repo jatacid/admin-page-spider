@@ -74,6 +74,16 @@ Sits on top of your admin bar giving you an overview of all pages. Even if you h
 Options to turn off and turn on.  Simple and turns itself on when activated and deletes its own records from your database when you deactivate.
 
 == Changelog ==
+= 1.09 =
+* Made default min width a little larger
+* Added a slight transparency so you can see underneath
+* Removed String Length code which was causing weird characters
+* Issues occuring with browsers and scroll bar hiding the submenu items so have moved all submenus into the main menu heirarchy with padding indentation. Should now work on all browsers.
+* Added 'view' icons to simply view the page instead of edit.
+* Added 'Title' tags to almost every menu item to provide more explanation.
+
+= 1.08 =
+* Critical fix of submenu edit links for wordpress pages taking you to edit for the primary page.
 
 = 1.07 =
 * Added hooks for adding support & new features.
@@ -98,5 +108,5 @@ Options to turn off and turn on.  Simple and turns itself on when activated and 
 
 == Upgrade Notice ==
 
-= 1.07 =
-New This Version: Admins only! No more non-functioning links available to non admin users and much more!
+= 1.09 =
+New This Version: Improved performance and Pro Pack now has better menus with new icons instead of submenus!

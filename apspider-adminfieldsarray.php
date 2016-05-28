@@ -11,7 +11,7 @@ $fields = array(
 				'section' => 'first_section',
 				'type' => 'text',
 				'supplemental' => __( 'The name of the menu item in the Admin Bar', 'admin-page-spider'),
-				'default' => 'Wordpress Pages'
+				'default' => 'Edit Pages'
 			),
 
 			array(

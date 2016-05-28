@@ -5,7 +5,7 @@ Plugin Name: Admin Page Spider
 Plugin URI: https://wordpress.org/plugins/admin-page-spider/
 Description: Adds menus to the admin bar which gives you quick access to view or edit any page available on the website.
 Author: J7Digital
-Version: 1.07
+Version: 1.09
 Author URI: https://adminpagespider.com
 Text Domain: admin-page-spider
 Domain Path: /languages
