@@ -201,27 +201,9 @@ new Admin_Page_Spider();
 add_filter('apspp_after_settings_message', 'apspp_after_settings_messages', 10);
 function apspp_after_settings_messages($message){
 
-// return '
-// <div style="padding: 30px; background-color: lightblue; margin: 50px 0; text-align: center;">
-// <br><h1>GET THE PRO PACK!</h1><ul>
-// <li>+ Support for Beaver Builder AND Templates!</li>
-// <li>+ Support For Wordpress Posts</li>
-// <li>+ Support For CSS Hero!</li>
-// <li>+ Support For Microthemer!</li>
-// <li>+ Cheap & Dev Friendly Site Licenses!</li>
-// </ul><br/>
-// <a target="_blank" href="https://adminpagespider.com/admin-page-spider-pro-pack/" style="text-decoration: none;"><h3 style="background-color: darkslateblue; color: white; max-width: 300px; text-decoration: none; margin: auto; padding: 10px 20px; border-radius: 15px;">Check It Out Now</h3></a></div>' ;
-
 return '
 <div style="padding: 30px; background-color: lightblue; margin: 50px 0; text-align: center;">
-<h1>Get <span style="color: purple;">60 PERCENT OFF!!!</span> Admin Page Spider Pro <br>
-Just use the code below!</h1>
-<br>
-<h1 style="color: purple;">60 Percent OFF Code: FRIENDOFBEAVER</h1>
-<span style="color: green;"> Hurry! Less than 100 uses left!</span>
-<h3>Since you have been an early adopter of Admin Page Spider,<br> you can use the code during your purchase of the new Pro Pack!</h3>
-<br>
-
+<h1><span style="color: purple;">Get Admin Page Spider Pro Pack!!</span></h1>
 
 <br><h1>THE PRO PACK FEATURES!</h1><ul>
 <li>+ Wordpress Posts!</li>

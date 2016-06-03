@@ -5,7 +5,7 @@ Plugin Name: Admin Page Spider
 Plugin URI: https://wordpress.org/plugins/admin-page-spider/
 Description: Adds menus to the admin bar which gives you quick access to view or edit any page available on the website.
 Author: J7Digital
-Version: 1.09
+Version: 1.10
 Author URI: https://adminpagespider.com
 Text Domain: admin-page-spider
 Domain Path: /languages
@@ -27,14 +27,14 @@ GNU General Public License for more details.
 
 add_action ( 'init' , 'page_spider_init' );
 function page_spider_init () {
-if ( current_user_can( 'administrator' )){
+	if ( current_user_can( 'administrator' )){
 	//textdomain
-	load_plugin_textdomain( 'admin-page-spider', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'admin-page-spider', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 	// Load settings page
-	include_once 'apspider-adminsettings.php';
+		include_once 'apspider-adminsettings.php';
 	// Loads functions & menus
-	include_once 'apspider-functions.php';
-}
+		include_once 'apspider-functions.php';
+	}
 }
 
 
@@ -62,7 +62,7 @@ function apspider_plugin_activate(){
 		return;
 
 //Delete defunct menu option (from 1.06)
-delete_option('apspider_radio_viewmenu');
+	delete_option('apspider_radio_viewmenu');
 
 	// Include the array of settings
 	include('apspider-adminfieldsarray.php');
@@ -76,8 +76,8 @@ delete_option('apspider_radio_viewmenu');
 add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'aps_pluginaction_links' );
 
 function aps_pluginaction_links( $links ) {
-   $links[] = '<a href="'. esc_url( get_admin_url(null, 'options-general.php?page=apspider_fields') ) .'">Settings</a>';
+	$links[] = '<a href="'. esc_url( get_admin_url(null, 'options-general.php?page=apspider_fields') ) .'">Settings</a>';
 
-   $links[] = '<a href="https://adminpagespider.com/" target="_blank">Get Pro</a>';
-   return $links;
+	$links[] = '<a href="https://adminpagespider.com/" target="_blank">Get Pro</a>';
+	return $links;
 }

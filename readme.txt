@@ -16,21 +16,27 @@ Navigating through pages in wordpress can be a major pain. If you're in a backen
 
 Now with Admin Page Spider you can crawl all over your pages from any point and you can access the Edit pages directly. From anywhere.
 
-
 It adds several quick access link menus to your admin bar. To view any page, or directly edit a page.
 
 See the [screenshots tab](http://wordpress.org/extend/plugins/admin-page-spider/screenshots/) for more details.
 
+**You can save almost 30% of your editing time!**
 
-**Do You Use Any Editing Plugins?**
+
+[**Pro Pack Available**](https://adminpagespider.com/admin-page-spider-pro-pack/)
+
+
+**Do You Do Any Of These?**
+
 There's a new Pro Pack addon available for Admin Page Spider which extends support to a variety of other page editing interfaces in wordpress.
-* Posts & Pages
-* Beaver Builder
-* CSS Hero
-* Microthemer
-If you use Beaver Builder there's a similar menu available to instantly jump into the editing interface for Beaver Builder pages.
 
-If you don't know what beaver builder is - check it out [Check it out](https://adminpagespider.com/admin-page-spider-pro-pack/)
+* You can edit POSTS and blog posts with a quick access menu
+* Beaver Builder has direct access to the editing interface for Beaverbuilder
+* CSS Hero can open up directly to the page you want to edit
+* Microthemer will open up in its special admin window on your exact page
+
+[Check It Out Now!](https://adminpagespider.com/admin-page-spider-pro-pack/)
+
 
 
 == Installation ==
@@ -73,7 +79,17 @@ Sits on top of your admin bar giving you an overview of all pages. Even if you h
 3. screenshot-3.png
 Options to turn off and turn on.  Simple and turns itself on when activated and deletes its own records from your database when you deactivate.
 
+4. screenshot-4.png
+New update with clever interface to allow you to view and edit all from a single place. SUPER fast!
+
 == Changelog ==
+
+= 1.10 =
+* Added quick access item to settings for people who don't realise there are settings.
+* Added an icon to make it more apparent that the primary menu is clickable.
+* Added a hook for additional styles to be added by each individual plugin without adding more bloat to the css.
+
+
 = 1.09 =
 * Made default min width a little larger
 * Added a slight transparency so you can see underneath
@@ -108,5 +124,5 @@ Options to turn off and turn on.  Simple and turns itself on when activated and 
 
 == Upgrade Notice ==
 
-= 1.09 =
-New This Version: Improved performance and Pro Pack now has better menus with new icons instead of submenus!
+= 1.10 =
+New This Version: Combined Edit Link and menu - so now you can click on the menu to edit current page.

@@ -93,6 +93,17 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 			$wp_admin_bar->add_node( $args );
 		}
 	}
+
+		//Create a quick link to the settings page
+	$args = array(
+		'id'    => 'viewapspider_settings',
+		'title' => __('Settings', 'admin_page_spider'),
+		'href'  => admin_url( '/options-general.php?page=apspider_fields'),
+		'parent' => 'apspider_edit_wp_pg',
+		'meta'  => array( 'class' => 'aps_highlighted', 'title' => __('Settings', 'admin_page_spider'))
+		);
+	$wp_admin_bar->add_node( $args );
+
 } // End of "Edit Pages" Menu Bar creation
 
 // Remove the 'redundant' Edit node from the admin bar that is no longer needed
@@ -140,23 +151,17 @@ function add_aps_custom_admin_styles() {
 	.aps_highlighted_view a:before{
 		content: "\f179";
 	}
-
 	/* Hide default arrow for submenu items */
 	#wpadminbar .menupop .menupop>.ab-item:before{
 	content: "";
-}
-
-</style>';
-
+}';
+do_action('aps_extra_styles');
+echo '</style>';
 }
 add_action('admin_head', 'add_aps_custom_admin_styles', 10);
 add_action('wp_head', 'add_aps_custom_admin_styles', 10);
-
-// echo '<script "type="text/javascript">
-// (function($){
-// 	jQuery(document).ready(function(){
-// 		jQuery(".aps_has_children").hover(function(){
-// 		});
-// 	});
-// })(jQuery);
-// </script>';
+add_action('aps_extra_styles', 'aps_extra_styles', 10);
+//Adds an edit pencil to the Edit Page menu item
+function aps_extra_styles(){
+	echo '#wp-admin-bar-apspider_edit_wp_pg>a:before{content: "\f464"; top: 2px;}' ;
+}
