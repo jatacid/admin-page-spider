@@ -17,7 +17,7 @@ function apspider_edit_wp_pg( $wp_admin_bar ) {
 	//Gets Menu name settings or Sets it to default.
 	$aps_which_option_is_selected = get_option('apspider_editmenu_name');
 	if ( empty( $aps_which_option_is_selected[0]) OR $aps_which_option_is_selected[0] == ''){
-		$aps_which_option_is_selected = 'Edit Pages';
+		$aps_which_option_is_selected = 'Edit Page';
 	}
 
 	//Create Main Menu Node (edits current post)

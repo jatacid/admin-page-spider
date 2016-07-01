@@ -1,6 +1,6 @@
 === Admin Page Spider ===
 Contributors: jatacid
-Donate link: https://adminpagespider.com/admin-page-spider-pro-pack/
+Donate link: https://j7digital.com/downloads/admin-page-spider-pro-pack/
 Tags: usability, admin, developer
 Requires at least: 4.4.0
 Tested up to: 4.5.2
@@ -12,30 +12,30 @@ View & Edit any page on your entire website from any location!
 
 == Description ==
 
-Navigating through pages in wordpress can be a major pain. If you're in a backend page and you want to get to a contact page it can take several clicks.
+Navigating through pages in wordpress can be a major pain. If you're in a backend page and you want to get to a contact page it can take several clicks. First you have to visit the home page, then you have to visit the contact page, then you have to click the edit button - make your edits and then hit save and then visit the contact page again.
 
 Now with Admin Page Spider you can crawl all over your pages from any point and you can access the Edit pages directly. From anywhere.
 
-It adds several quick access link menus to your admin bar. To view any page, or directly edit a page.
+So now you can simply hover over your Admin Page Spider menu to the 'contact' page, choose to instantly open up the edit interface or simply view it - and you're done.  In one click!  No need to jump back and forth between the front and backend of Wordpress!
 
 See the [screenshots tab](http://wordpress.org/extend/plugins/admin-page-spider/screenshots/) for more details.
 
-**You can save almost 30% of your editing time!**
+**You can save up to 20-30% of your editing time!**
+- Tested on a membership site with multiple, hidden pages, beaver builder and CSS hero -
 
 
-[**Pro Pack Available**](https://adminpagespider.com/admin-page-spider-pro-pack/)
+[**Pro Pack Available**](https://j7digital.com/downloads/admin-page-spider-pro-pack/)
 
+**Do You Use Wordpress for Any Of These?**
 
-**Do You Do Any Of These?**
+* Posts - Do you blog? Get a list of all your posts so you can easily view and edit each one directly!
+* Beaver Builder - Open any page directly in the editor interface so you can save time clicking and navigating! It also adds a list of your templates!
+* CSS Hero - This CSS Editor is even more powerful now that you can open up any page directly using Admin Page Spider!
+* Microthemer - Save so much time waiting for the backend to load, and then finding your page again, and then editing.  Simply use Page Spider to find and edit the page instantly!
+* Easy Digital Downloads - Editing and finding products on your site with EDD can be a pain having to go back and forth.  If your site doesn't have the links available it's even worse! Not anymore! Quickly edit any download instantly!
+* Woocommerce - Coming soon! Get a searchable list of Woocommerce products right in your admin bar so that you can edit and adjust any product without hassle!
 
-There's a new Pro Pack addon available for Admin Page Spider which extends support to a variety of other page editing interfaces in wordpress.
-
-* You can edit POSTS and blog posts with a quick access menu
-* Beaver Builder has direct access to the editing interface for Beaverbuilder
-* CSS Hero can open up directly to the page you want to edit
-* Microthemer will open up in its special admin window on your exact page
-
-[Check It Out Now!](https://adminpagespider.com/admin-page-spider-pro-pack/)
+[Check It Out Now!](https://j7digital.com/downloads/admin-page-spider-pro-pack/)
 
 
 
@@ -67,7 +67,7 @@ Yes, the base plugin which gives you a wordpress page navigation and edit menu i
 
 Support for more developer friendly and intuitive working experiences. The CSS Editor interface plugins and various page builders as well as Wordpress Posts are supported.
 
-[Read More Here](https://adminpagespider.com/admin-page-spider-pro-pack/)
+[Read More Here](https://j7digital.com/downloads/admin-page-spider-pro-pack/)
 
 == Screenshots ==
 
@@ -83,6 +83,10 @@ Options to turn off and turn on.  Simple and turns itself on when activated and 
 New update with clever interface to allow you to view and edit all from a single place. SUPER fast!
 
 == Changelog ==
+
+= 1.11=
+* Updated Author urls
+* Cleaned up some code comments and descriptions
 
 = 1.10 =
 * Added quick access item to settings for people who don't realise there are settings.

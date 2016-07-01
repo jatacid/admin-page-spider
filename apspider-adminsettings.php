@@ -101,7 +101,7 @@ _e('Support Us With Our Affiliate Links To Some Great Plugins!', 'admin-page-spi
 	public static function apspider_section_callback( $arguments ) {
 		switch( $arguments['id'] ){
 			case 'first_section':
-			echo __( '<p>The options for the Wordpress menus, allowing you to quickly view and edit any page</p>' , 'admin-page-spider' );
+			echo __( '<p>The options for the Wordpress menus, allowing you to quickly view and edit any page. It will automatically hide the default "Edit" button but clicking the menu itself will edit the current page.</p>' , 'admin-page-spider' );
 			break;
 
 	do_action( 'extra_section_callbacks', $arguments);
@@ -212,7 +212,7 @@ return '
 <li>+ Microthemer!</li>
 <li>+ Cheap & Dev Friendly Site Licenses!</li>
 </ul><br/>
-<a target="_blank" href="https://adminpagespider.com/admin-page-spider-pro-pack/" style="text-decoration: none;"><h3 style="background-color: darkslateblue; color: white; max-width: 300px; text-decoration: none; margin: auto; padding: 10px 20px; border-radius: 15px;">Check It Out Now</h3></a></div>' ;
+<a target="_blank" href="https://j7digital.com/downloads/admin-page-spider-pro-pack/" style="text-decoration: none;"><h3 style="background-color: darkslateblue; color: white; max-width: 300px; text-decoration: none; margin: auto; padding: 10px 20px; border-radius: 15px;">Check It Out Now</h3></a></div>' ;
 
 }
 

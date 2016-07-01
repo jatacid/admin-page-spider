@@ -3,10 +3,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /*
 Plugin Name: Admin Page Spider
 Plugin URI: https://wordpress.org/plugins/admin-page-spider/
-Description: Adds menus to the admin bar which gives you quick access to view or edit any page available on the website.
+Description: Adds a list of your pages to the admin bar so you have quick access to edit and view every page on your entire website.
 Author: J7Digital
-Version: 1.10
-Author URI: https://adminpagespider.com
+Version: 1.11
+Author URI: https://j7digital.com/downloads/admin-page-spider-pro-pack/
 Text Domain: admin-page-spider
 Domain Path: /languages
 License: GPLv2 or later
@@ -78,6 +78,6 @@ add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'aps_pluginactio
 function aps_pluginaction_links( $links ) {
 	$links[] = '<a href="'. esc_url( get_admin_url(null, 'options-general.php?page=apspider_fields') ) .'">Settings</a>';
 
-	$links[] = '<a href="https://adminpagespider.com/" target="_blank">Get Pro</a>';
+	$links[] = '<a href="https://j7digital.com/downloads/admin-page-spider-pro-pack/" target="_blank">Get Pro</a>';
 	return $links;
 }
